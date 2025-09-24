@@ -31,7 +31,7 @@ java edu.ccrm.cli.MainCLI
 
 ---
 
-* #Evolution of Java
+* ## Evolution of Java
 
 1995 – Java 1.0 released.
 
@@ -51,7 +51,7 @@ Today – Used for web, cloud, mobile (Android), and enterprise apps.
 
 ---
 
-* #Java ME vs SE vs EE
+* ## Java ME vs SE vs EE
 
 Java ME	Micro Edition	Embedded & Mobile	IoT apps, old mobile phones
 
@@ -63,7 +63,7 @@ Java EE	Enterprise Edition	Web & Enterprise	Banking, e-commerce
 
 ---
 
-* #JDK vs JRE vs JVM
+* ## JDK vs JRE vs JVM
 
 JDK: Development Kit with compiler (javac), JRE, debugger.
 
@@ -73,7 +73,7 @@ JVM: Virtual machine executing bytecode → ensures portability.
 
 ---
 
-* #Installation Steps (Windows)
+* ## Installation Steps (Windows)
 
 1. Download JDK 17 from Oracle.
 
@@ -91,7 +91,7 @@ javac -version
 
 ---
 
-* #Eclipse Setup
+* ## Eclipse Setup
 
 1. Download Eclipse IDE.
 
@@ -108,7 +108,7 @@ javac -version
 
 ---
 
-* #Mapping Table (Syllabus → Code)
+* ## Mapping Table (Syllabus → Code)
 
 Topic	File/Class/Method
 
@@ -140,7 +140,7 @@ CLI Application	MainCLI.java
 
 ---
 
-* #Assertions in Java
+* ## Assertions in Java
 
 How to Enable
 
@@ -156,7 +156,7 @@ assert credits > 0 : "Course credits must be positive!";
 
 ---
 
-* #Conclusion
+* ## Conclusion
 
 This project demonstrates all Java SE syllabus topics in a working application.
 
