@@ -1,48 +1,198 @@
-# Campus Course & Records Manager (CCRM)
-
-A console-based **Java SE project** for managing students, courses, enrollments, grades, transcripts, and file utilities.  
-This project demonstrates **OOP principles, Java Streams, NIO.2, Date/Time API, exception handling, design patterns (Singleton, Builder), enums, and recursion**.
+#  Campus Course Registration and Management System (CCRM)
 
 ---
 
-## 🚀 Features
+##  Project Overview
+The *Campus Course Registration and Management System (CCRM)* is a *Java SE application* built to demonstrate university-style course registration.  
 
-### 1. Student Management
-- Add, list, update, deactivate students
-- Print student profile & transcript
+It covers:
+- Student enrollment & profile management  
+- Instructor assignments  
+- Course catalog & registration with capacity checks  
+- Transcript and grade management  
+- File storage with NIO.2  
+- OOP concepts, Exception Handling, Design Patterns, Collections, Recursion, Enums, Assertions
+  
+---
 
-### 2. Course Management
-- Add, list, update, deactivate courses
-- Search & filter (by instructor, department, semester) using **Streams API**
+##  How to Run
 
-### 3. Enrollment & Grading
-- Enroll/Unenroll students into courses
-- Business rules: max credits per semester
-- Record marks & compute GPA
-- Enum `Grade` & `Semester`
-- Transcript generation (using `toString()` + polymorphism)
+### Requirements
+- *JDK Version:* JDK 17 or higher  
+- *IDE:* IntelliJ IDEA (preferred) / Eclipse  
+ 
 
-### 4. File Operations (NIO.2)
-- Import/Export CSV files
-- Export students, courses, enrollments
-- Backup exported files into **timestamped folders**
-- Recursive utility → compute backup folder size
-
-### 5. CLI Workflow
-- Menu-driven interface with loops, switch, break/continue
-- Options: Students, Courses, Enrollments, Grades, Import/Export, Backup, Reports, Exit
+### Command Line
+```bash
+cd src
+javac edu/ccrm/cli/MainCLI.java
+java edu.ccrm.cli.MainCLI
+```
 
 ---
 
-## 🛠️ Tech Stack
+* Evolution of Java
 
-- **Java SE 24**
-- **Maven 3.9+**
-- Uses: Java Streams, NIO.2, Date/Time API, OOP principles, Design Patterns
+1995 – Java 1.0 released.
+
+1998 – Java 2 introduced: J2SE, J2EE, J2ME.
+
+2004 – Java 5: Generics, Annotations, Enhanced loops.
+
+2011 – Java 7: NIO.2, try-with-resources.
+
+2014 – Java 8: Lambdas, Streams, Date-Time API.
+
+2017–2021 – Java 9 to 17: Modules, var, records, switch expressions.
+
+Today – Used for web, cloud, mobile (Android), and enterprise apps.
 
 
-### Prerequisites
-- Java 24+
-- Apache Maven 3.9+
+
+---
+
+* Java ME vs SE vs EE
+
+Java ME	Micro Edition	Embedded & Mobile	IoT apps, old mobile phones
+
+Java SE	Standard Edition	Core + Desktop	Standalone apps, CLI tools
+
+Java EE	Enterprise Edition	Web & Enterprise	Banking, e-commerce
 
 
+
+---
+
+* JDK vs JRE vs JVM
+
+JDK: Development Kit with compiler (javac), JRE, debugger.
+
+JRE: Runtime environment to run Java programs (includes JVM).
+
+JVM: Virtual machine executing bytecode → ensures portability.
+
+---
+
+* Installation Steps (Windows)
+
+1. Download JDK 17 from Oracle.
+
+
+2. Install JDK → set JAVA_HOME in system environment variables.
+
+
+3. Add %JAVA_HOME%\bin to PATH.
+
+
+4. Verify:
+
+java -version
+javac -version
+
+---
+
+* Eclipse Setup
+
+1. Download Eclipse IDE.
+
+
+2. Configure JDK 17 in Preferences.
+
+
+3. Import project: File → Import → Existing Java Project.
+
+
+4. Run MainCLI.java.
+
+
+
+---
+
+* Mapping Table (Syllabus → Code)
+
+Topic	File/Class/Method
+
+Abstraction	Person.java (abstract)
+
+Inheritance	Student extends Person
+
+Polymorphism	StudentService.listStudents()
+
+Encapsulation	Private fields in Student.java with getters/setters
+
+Singleton	AppConfig.java
+
+Builder Pattern	Course.java (static Builder)
+
+Enums	Semester.java, Grade.java
+
+File Handling	FileUtil.java
+
+Exception Handling	InvalidInputException.java, CourseFullException.java
+
+Recursion	BackupUtil.java
+
+Collections	StudentService.java (HashMap, ArrayList)
+
+CLI Application	MainCLI.java
+
+
+
+---
+
+* Assertions in Java
+
+How to Enable
+
+Run with -ea:
+
+java -ea edu.ccrm.cli.MainCLI
+
+Example Usage
+
+int credits = course.getCredits();
+assert credits > 0 : "Course credits must be positive!";
+
+
+---
+
+* Files and Folder Structure (For GitHub Submission)
+
+Campus-CCRM-Project/
+│
+├── README.md                  # Project documentation
+├── .gitignore                 # Ignore IDE build files
+├── LICENSE (optional)         # If required
+│
+├── src/                       # Source code
+│   └── edu/ccrm/
+│       ├── cli/MainCLI.java
+│       ├── model/Student.java
+│       ├── model/Course.java
+│       ├── model/Instructor.java
+│       ├── util/FileUtil.java
+│       ├── util/BackupUtil.java
+│       ├── service/StudentService.java
+│       ├── exception/InvalidInputException.java
+│       ├── exception/CourseFullException.java
+│       └── config/AppConfig.java
+│
+└── data/                      # CSV files for persistence
+    ├── students.csv
+    ├── courses.csv
+    └── enrollments.csv
+
+
+---
+
+* Conclusion
+
+This project demonstrates all Java SE syllabus topics in a working application.
+
+It includes OOP, file I/O, collections, recursion, enums, exceptions, assertions, and patterns.
+
+README covers installation, execution, mapping, and file structure.
+
+Project is ready to upload on GitHub and submit for evaluation.
+
+---
