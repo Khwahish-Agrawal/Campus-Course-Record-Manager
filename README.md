@@ -33,19 +33,19 @@ java edu.ccrm.cli.MainCLI
 
 * ## Evolution of Java
 
-1995 – Java 1.0 released.
+    1995 – Java 1.0 released.
 
-1998 – Java 2 introduced: J2SE, J2EE, J2ME.
+    1998 – Java 2 introduced: J2SE, J2EE, J2ME.
 
-2004 – Java 5: Generics, Annotations, Enhanced loops.
+    2004 – Java 5: Generics, Annotations, Enhanced loops.
 
-2011 – Java 7: NIO.2, try-with-resources.
+    2011 – Java 7: NIO.2, try-with-resources.
 
-2014 – Java 8: Lambdas, Streams, Date-Time API.
+    2014 – Java 8: Lambdas, Streams, Date-Time API.
 
-2017–2021 – Java 9 to 17: Modules, var, records, switch expressions.
+    2017–2021 – Java 9 to 17: Modules, var, records, switch expressions.
 
-Today – Used for web, cloud, mobile (Android), and enterprise apps.
+    Today – Used for web, cloud, mobile (Android), and enterprise apps.
 
 
 
@@ -53,11 +53,11 @@ Today – Used for web, cloud, mobile (Android), and enterprise apps.
 
 * ## Java ME vs SE vs EE
 
-Java ME	Micro Edition	Embedded & Mobile	IoT apps, old mobile phones
+    Java ME	Micro Edition	: Embedded & Mobile	IoT apps, old mobile phones
 
-Java SE	Standard Edition	Core + Desktop	Standalone apps, CLI tools
+    Java SE	Standard Edition : Core + Desktop	Standalone apps, CLI tools
 
-Java EE	Enterprise Edition	Web & Enterprise	Banking, e-commerce
+    Java EE	Enterprise Edition	: Web & Enterprise	Banking, e-commerce
 
 
 
@@ -65,44 +65,45 @@ Java EE	Enterprise Edition	Web & Enterprise	Banking, e-commerce
 
 * ## JDK vs JRE vs JVM
 
-JDK: Development Kit with compiler (javac), JRE, debugger.
+    JDK: Development Kit with compiler (javac), JRE, debugger.
 
-JRE: Runtime environment to run Java programs (includes JVM).
+    JRE: Runtime environment to run Java programs (includes JVM).
 
-JVM: Virtual machine executing bytecode → ensures portability.
+    JVM: Virtual machine executing bytecode → ensures portability.
 
 ---
 
 * ## Installation Steps (Windows)
 
-1. Download JDK 17 from Oracle.
+    1. Download JDK 17 from Oracle.
 
 
-2. Install JDK → set JAVA_HOME in system environment variables.
+    2. Install JDK → set JAVA_HOME in system environment variables.
 
 
-3. Add %JAVA_HOME%\bin to PATH.
+    3. Add %JAVA_HOME%\bin to PATH.
 
 
-4. Verify:
+    4. Verify:
 
-java -version
-javac -version
+        java -version
+       
+        javac -version
 
 ---
 
 * ## Eclipse Setup
 
-1. Download Eclipse IDE.
+    1. Download Eclipse IDE.
 
 
-2. Configure JDK 17 in Preferences.
+    2. Configure JDK 17 in Preferences.
 
 
-3. Import project: File → Import → Existing Java Project.
+    3. Import project: File → Import → Existing Java Project.
 
 
-4. Run MainCLI.java.
+    4. Run MainCLI.java.
 
 
 
@@ -110,31 +111,31 @@ javac -version
 
 * ## Mapping Table (Syllabus → Code)
 
-Topic	File/Class/Method
+    Topic	: File/Class/Method
 
-Abstraction	Person.java (abstract)
+    Abstraction	: Person.java (abstract)
 
-Inheritance	Student extends Person
+    Inheritance	: Student extends Person
 
-Polymorphism	StudentService.listStudents()
+    Polymorphism :	StudentService.listStudents()
 
-Encapsulation	Private fields in Student.java with getters/setters
+    Encapsulation :	Private fields in Student.java with getters/setters
 
-Singleton	AppConfig.java
+    Singleton	: AppConfig.java
 
-Builder Pattern	Course.java (static Builder)
+    Builder Pattern	: Course.java (static Builder)
 
-Enums	Semester.java, Grade.java
+    Enums	: Semester.java, Grade.java
 
-File Handling	FileUtil.java
+    File Handling	: FileUtil.java
 
-Exception Handling	InvalidInputException.java, CourseFullException.java
+    Exception Handling	: InvalidInputException.java, CourseFullException.java
 
-Recursion	BackupUtil.java
+    Recursion	: BackupUtil.java
 
-Collections	StudentService.java (HashMap, ArrayList)
+    Collections	: StudentService.java (HashMap, ArrayList)
 
-CLI Application	MainCLI.java
+    CLI Application	: MainCLI.java
 
 
 
@@ -142,28 +143,27 @@ CLI Application	MainCLI.java
 
 * ## Assertions in Java
 
-How to Enable
+    How to Enable
 
-Run with -ea:
+    Run with -ea:
 
-java -ea edu.ccrm.cli.MainCLI
+    java -ea edu.ccrm.cli.MainCLI
 
-Example Usage
+    Example Usage
 
-int credits = course.getCredits();
-assert credits > 0 : "Course credits must be positive!";
+      int credits = course.getCredits();
+  
+      assert credits > 0 : "Course credits must be positive!";
 
 
 ---
 
 * ## Conclusion
 
-This project demonstrates all Java SE syllabus topics in a working application.
+    This project demonstrates all Java SE syllabus topics in a working application.
 
-It includes OOP, file I/O, collections, recursion, enums, exceptions, assertions, and patterns.
+    It includes OOP, file I/O, collections, recursion, enums, exceptions, assertions, and patterns.
 
-README covers installation, execution, mapping, and file structure.
-
-Project is ready to upload on GitHub and submit for evaluation.
+    README covers installation, execution, mapping, and file structure.
 
 ---
