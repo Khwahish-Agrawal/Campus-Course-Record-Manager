@@ -156,35 +156,6 @@ assert credits > 0 : "Course credits must be positive!";
 
 ---
 
-* Files and Folder Structure (For GitHub Submission)
-
-Campus-CCRM-Project/
-│
-├── README.md                  # Project documentation
-├── .gitignore                 # Ignore IDE build files
-├── LICENSE (optional)         # If required
-│
-├── src/                       # Source code
-│   └── edu/ccrm/
-│       ├── cli/MainCLI.java
-│       ├── model/Student.java
-│       ├── model/Course.java
-│       ├── model/Instructor.java
-│       ├── util/FileUtil.java
-│       ├── util/BackupUtil.java
-│       ├── service/StudentService.java
-│       ├── exception/InvalidInputException.java
-│       ├── exception/CourseFullException.java
-│       └── config/AppConfig.java
-│
-└── data/                      # CSV files for persistence
-    ├── students.csv
-    ├── courses.csv
-    └── enrollments.csv
-
-
----
-
 * Conclusion
 
 This project demonstrates all Java SE syllabus topics in a working application.
